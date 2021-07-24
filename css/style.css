@@ -378,6 +378,10 @@ template {
           justify-content: space-between;
 }
 
+.navbar-top__menu-botton {
+  display: none;
+}
+
 .navbar__search {
   margin-right: auto;
   margin-left: 108px;
@@ -483,13 +487,18 @@ template {
   .container {
     max-width: 700px;
   }
+  .logo {
+    width: 132px;
+  }
   .navbar__search {
     margin-left: auto;
-    width: 340px;
   }
   .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
+  }
+  .search__input {
+    width: 340px;
   }
 }
 
@@ -498,17 +507,49 @@ template {
     max-width: 576px;
     width: 92%;
   }
-  .logo {
-    width: 132px;
-  }
   .navbar-top {
     padding: 30px 0;
   }
   .navbar-menu {
     padding: 22px 0;
   }
-  .user__name {
+  .navbar__search, .navbar-user, .navbar-menu {
     display: none;
+  }
+  .menu-button {
+    width: 16px;
+    height: 11px;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: none;
+    cursor: pointer;
+    background-color: #FFFFFF;
+  }
+  .menu-button__line {
+    width: 16px;
+    height: 1px;
+    background-color: #333333;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 280px;
+  }
+  .logo {
+    width: 99px;
   }
 }
 /*# sourceMappingURL=style.css.map */
