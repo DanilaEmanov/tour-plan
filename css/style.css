@@ -402,7 +402,7 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0;
-  padding: 32px 0;
+  padding: 31px 0;
   color: #FFFFFF;
   list-style-type: none;
 }
@@ -485,17 +485,18 @@ template {
 
 @media screen and (max-width: 992px) {
   .container {
-    max-width: 700px;
-  }
-  .logo {
-    width: 132px;
+    max-width: 760px;
+    width: 91%;
   }
   .navbar__search {
-    margin-left: auto;
+    margin-left: 47px;
   }
   .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
+  }
+  .logo {
+    width: 142px;
   }
   .search__input {
     width: 340px;
@@ -504,8 +505,58 @@ template {
 
 @media screen and (max-width: 768px) {
   .container {
-    max-width: 576px;
+    max-width: 700px;
     width: 92%;
+  }
+  .navbar-top {
+    padding: 30px 0;
+  }
+  .navbar-menu {
+    padding: 20px 0;
+    max-width: 675px;
+    margin: auto;
+  }
+  .logo {
+    width: 132px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .navbar-menu__link {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .navbar__search {
+    margin-left: auto;
+  }
+  .logo {
+    width: 122px;
+  }
+  .search {
+    height: 36px;
+  }
+  .search__input {
+    width: 290px;
+  }
+  .search__button {
+    width: 50px;
+  }
+  .user__img {
+    width: 36px;
+    height: 36px;
+  }
+  .user__name {
+    margin-left: 12px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 520px;
+  }
+  .logo {
+    width: 99px;
   }
   .navbar-top {
     padding: 30px 0;
@@ -544,12 +595,12 @@ template {
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 480px) {
   .container {
-    max-width: 280px;
+    max-width: 88%;
   }
-  .logo {
-    width: 99px;
+  .navbar-top {
+    padding: 24px 1px;
   }
 }
 /*# sourceMappingURL=style.css.map */
