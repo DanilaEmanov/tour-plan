@@ -673,12 +673,12 @@ template {
   background-color: transparent;
 }
 
-.slider-button__next {
+.slider-button_next {
   right: 18px;
   background-image: url("../img/arrow-next.svg");
 }
 
-.slider-button__prev {
+.slider-button_prev {
   left: 18px;
   background-image: url("../img/arrow-prev.svg");
 }
@@ -749,7 +749,6 @@ template {
   .container {
     max-width: 560px;
   }
-
   .navbar-menu {
     padding: 20px 0;
   }
