@@ -18,6 +18,10 @@ img {
   max-width: 100%;
 }
 
+button {
+  cursor: pointer;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -661,7 +665,8 @@ template {
   z-index: 99;
   border: none;
   top: 50%;
-  tranform: translateY(-50%);
+  -webkit-transform: translateY(-42%);
+  transform: translateY(-42%);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 10px;
@@ -744,9 +749,7 @@ template {
   .container {
     max-width: 560px;
   }
-  .navbar {
-    padding: 30px 0;
-  }
+
   .navbar-menu {
     padding: 20px 0;
   }
