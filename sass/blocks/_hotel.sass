@@ -61,6 +61,7 @@
     &__lit
       font-size: 10px
       line-height: 13px
+// Создаём СЛАЙДЕР
 .swiper-container 
   margin-left: 0
   max-width: 728px
@@ -100,5 +101,96 @@
     &_prev
       left: 18px
       background-image: url('../img/arrow-prev.svg')
+// Верстаем BOOKING
+.hotel
+  &-grid
+    display: flex
+    justify-content: space-between
+  &-slider
+    // margin-right: 30px
+.booking
+  background-color: $dark
+  color: $light
+  width: 350px
+  height: 210px 
+  border-radius: 8px
+  padding: 29px 29px 26px 26px 
+  font-family: Nunito
+  &__info
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 5px  
+  &__price
+    display: flex
+    flex-direction: column
+  &-icon
+    margin-right: 9px  
+  &-icons
+    margin-right: 14px
+    &_tell
+      margin-right: 8px
+  &__call-center
+    display: flex
+    justify-content: space-between
+  // Шрифты для прайс блока.Начало
+  &__start
+    font-weight: normal
+    font-size: 10px
+    line-height: 14px
+  &__pricetag 
+    font-weight: 800
+    font-size: 24px
+    line-height: 33px
+  &__per-room
+    font-size: 12px
+    line-height: 16px
+  &__description
+  font-size: 12px
+  line-height: 16px
+  &__heading  
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+  &__num  
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+  &__button
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+  // Шрифты для прайс блока.Конец
+  &__nummber
+    text-decoration: none
+    color: inherit
+    display: flex
+    align-items: center
+  &__button
+    padding-top: 13px
+    padding-bottom: 13px
+    width: 100%
+    background-color: $primary
+    color: inherit
+    border-radius: 4px
+  &__room
+    margin-bottom: 16px
+  &__text
+    display: flex
+    align-items: center
+    &_user
+      margin-bottom: 8px
+  &__call-center
+    display: flex
+    align-items: center   
+    margin-bottom: 17px
+  &-wrapper
+    display: flex
+    flex-direction: column
+    justify-content: space-between  
 
-
+.map
+  background-color: green
+  max-width: 350px
+  min-height: 213px
+  border-radius: 10px
