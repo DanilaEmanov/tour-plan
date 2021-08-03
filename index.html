@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dest Tour Plan - Hotel Boogin</title>
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <!-- Подключение шрифтов  Nunito & Mulish-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -135,26 +135,46 @@
         </div>
         <!-- /.hotel-info -->
         <div class="hotel-grid">
-          <div class="hotel-slider">
+          <div class="slider hotel__slider">
             <!-- Slider main container -->
             <div class="swiper-container">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                  <img src="img/slide-1.jpg" alt="slide-1" class="slide-img" />
+                  <img
+                    src="img/slide-1.jpg"
+                    alt="slide-1"
+                    class="swiper-slide__img"
+                  />
                 </div>
                 <div class="swiper-slide">
-                  <img src="img/slide-2.jpg" alt="slide-2" />
+                  <img
+                    src="img/slide-2.jpg"
+                    alt="slide-2"
+                    class="swiper-slide__img"
+                  />
                 </div>
                 <div class="swiper-slide">
-                  <img src="img/slide-3.jpg" alt="slide-3" />
+                  <img
+                    src="img/slide-3.jpg"
+                    alt="slide-3"
+                    class="swiper-slide__img"
+                  />
                 </div>
                 <div class="swiper-slide">
-                  <img src="img/slide-4.jpg" alt="slide-4" />
+                  <img
+                    src="img/slide-4.jpg"
+                    alt="slide-4"
+                    class="swiper-slide__img"
+                  />
                 </div>
                 <div class="swiper-slide">
-                  <img src="img/slide-5.jpg" alt="slide-5" />
+                  <img
+                    src="img/slide-5.jpg"
+                    alt="slide-5"
+                    class="swiper-slide__img"
+                  />
                 </div>
               </div>
 
@@ -167,7 +187,7 @@
           </div>
           <!-- /.hotel-slider -->
           <div class="booking-wrapper">
-            <div class="booking">
+            <div class="booking hotel__booking">
               <div class="booking__info">
                 <div class="booking__price">
                   <span class="booking__start">price starts as</span>
@@ -211,7 +231,16 @@
 
               <button class="button booking__button">View Other Options</button>
             </div>
-            <div class="map"></div>
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.0412632673433!2d98.2925528152188!3d7.890752094315351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503b7bfcd9f903%3A0xf7065fac1e3d7c48!2sDoubleTree%20by%20Hilton%20Phuket%20Banthai%20Resort!5e0!3m2!1sru!2sru!4v1627909568461!5m2!1sru!2sru"
+                width="100%"
+                height="213"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
             <!-- /.booking-wrapper -->
           </div>
           <!-- /.booking -->
