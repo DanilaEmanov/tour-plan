@@ -1,0 +1,90 @@
+.reviews
+  padding-top: 40px
+  padding-bottom: 70px
+  &__title
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+    margin: 0
+    margin-bottom: 70px
+
+  &-slider
+    &__item
+      background-color: #fff
+      border-radius: 8px
+      display: flex
+      flex-direction: column
+      align-items: center
+      width: 731px
+      margin: 45px auto 0
+      padding: 0 62px 30px
+      position: relative
+      &::before
+        background-image: url('../img/quote-left.svg')
+        width: 70px 
+        height: 47px
+        position: absolute
+        left: 62px
+        top: 13px
+        background-repeat: no-repeat
+      &::after
+        background-image: url('../img/quote-right.svg')
+        width: 70px 
+        height: 47px
+        position: absolute
+        left: 62px
+        top: 118px
+        background-repeat: no-repeat
+    &__avatar
+      width: 90px
+      height: 90px
+      border-radius: 50%
+      object-fit: cover
+      margin-bottom: 9px
+    &__username
+      font-weight: bold
+      font-size: 12px
+      line-height: 15px
+      color: $primary
+      margin-bottom: 10px 
+      margin: 0
+    &__date
+      font-size: 10px
+      line-height: 13px
+      /* identical to box height */
+      color: #000000
+      margin-bottom: 4px
+    &__text
+      font-weight: normal
+      font-size: 12px
+      line-height: 160%
+      text-align: justify
+      margin: auto
+      max-width: 537px
+    &__profile
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-top: -45px
+      margin-bottom: 32px
+    &__button
+      width: 30px
+      height: 30px
+      position: absolute
+      z-index: 99
+      border: none
+      top: 50%
+      transform: translateY(-42%)
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 10px
+      background-color: transparent
+      &_next
+        right: 18px
+        background-image: url('../img/arrow-reviews-next.svg')
+      &_prev
+        left: 18px
+        background-image: url('../img/arrow-reviews-prev.svg')
