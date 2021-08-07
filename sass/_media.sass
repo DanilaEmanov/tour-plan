@@ -7,7 +7,10 @@
   .swiper
     &-slide
       &__img
-        height: 100%    
+        height: 100% 
+  .card
+    width: 230px
+    height: 230px   
 @media screen and ( max-width: 992px  )
   .container, .newsletter-wrapper
     max-width: 760px
@@ -54,6 +57,20 @@
     &-slider
       &__input
         max-width: 580px
+      &__text
+        max-height: 133px
+    
+  .activities
+    padding-bottom: 70px
+    &-wrapper
+      flex-wrap: wrap
+    &__card
+      &_1,&_2
+        margin-bottom: 20px
+  .card
+    width: 339px
+    height: 255px
+
 @media screen and ( max-width: 768px )
   .container
     max-width: 700px
@@ -101,13 +118,14 @@
       margin-bottom: 50px
     &-slider
       &__item
+        max-width: 580px
         &::after,&::before
           display: none
       &__text
         max-width: 455px
       &__button
-        top: 45%
-        transform: translateY(-52%)
+        top: 50%
+        transform: translateY(-50%)
         &_next
           right: 1px
         &_prev
@@ -212,14 +230,17 @@
     width: 100% 
 
   .reviews
+    padding-top: 40px
+    padding-bottom: 50px
     &__title
       font-size: 18px
       line-height: 23px
     &-slider
       &__item
-        padding: 0 30px 30px
+        padding: 0 30px 36px
       &__text
         max-width: 400px 
+        max-height: 266px
       &__button
         top: 45px
         &_prev
@@ -230,6 +251,21 @@
           right: 50%
           transform: translate( 50%, -50%) 
           margin-right: -88px
+
+  .activities
+    padding-top: 40px
+    padding-bottom: 60px
+    &__title
+      font-size: 18px
+      line-height: 23px
+      margin-bottom: 36px
+    &__card
+      &_2
+        margin-bottom: 28px
+      &_3
+        margin-bottom: 20px
+  .card
+    width: 100%
 @media screen and ( max-width: 576px )
   .container, .newsletter-wrapper
     max-width: 460px
