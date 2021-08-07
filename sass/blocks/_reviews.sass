@@ -10,7 +10,13 @@
     text-transform: uppercase
     margin: 0
     margin-bottom: 70px
-
+  &-stars
+      &__wrapper
+        display: flex
+        align-items: center 
+        width: 48px
+        justify-content: space-between
+        margin-left: 3px
   &-slider
     &__item
       background-color: #fff
@@ -18,7 +24,7 @@
       display: flex
       flex-direction: column
       align-items: center
-      width: 731px
+      max-width: 731px
       margin: 45px auto 0
       padding: 0 62px 30px
       position: relative
@@ -49,14 +55,13 @@
       font-size: 12px
       line-height: 15px
       color: $primary
-      margin-bottom: 10px 
       margin: 0
+      margin-bottom: 10px 
     &__date
       font-size: 10px
       line-height: 13px
-      /* identical to box height */
       color: #000000
-      margin-bottom: 4px
+      margin-bottom: 4px 
     &__text
       font-weight: normal
       font-size: 12px
@@ -76,12 +81,12 @@
       position: absolute
       z-index: 99
       border: none
-      top: 50%
-      transform: translateY(-42%)
+      top: 41%
       background-repeat: no-repeat
       background-position: center
       background-size: 10px
       background-color: transparent
+      transform: translateY(-50%)
       &_next
         right: 18px
         background-image: url('../img/arrow-reviews-next.svg')
