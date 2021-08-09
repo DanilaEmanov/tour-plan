@@ -1,5 +1,4 @@
 .reviews
-  background-color: #0C8BF0
   padding-top: 40px
   padding-bottom: 70px
   &__title
@@ -31,14 +30,14 @@
       position: relative
       &::before
         content: ''
-        // background-image: url('../img/quote-left.svg')
+        background-image: url('../img/quote-left.svg')
         z-index: 10
         width: 70px 
         height: 47px
         position: absolute
         left: 62px
         top: 13px
-        background-repeat: no-repeat
+        background-repeat: no-repeat 
       &::after
         content: ''
         background-image: url('../img/quote-right.svg')
@@ -48,6 +47,7 @@
         right: 62px
         top: 118px
         background-repeat: no-repeat
+        
     &__avatar
       width: 90px
       height: 90px
@@ -75,6 +75,7 @@
       max-width: 537px
       max-height: 114px
       overflow: auto
+      z-index: 1
     &__profile
       display: flex
       flex-direction: column
